@@ -2,7 +2,7 @@
 # Project information
 site_name: Game Club.ch
 site_url: https://docs.game-cub.ch
-#repo_url: https://github.com/gameclub/docs.game-cub.ch
+#repo_url: https://github.com/Game-Club-Switzerland/docs.game-club.ch
 #repo_name: elstein.ch
 edit_uri: edit/main/docs/
 theme:
@@ -41,7 +41,7 @@ plugins:
       type: datetime
       format: "%d.%m.%Y"
   - git-committers:
-      repository: gameclub/docs.game-cub.ch
+      repository: Game-Club-Switzerland/docs.game-club.ch
   - git-authors
 
 nav:
