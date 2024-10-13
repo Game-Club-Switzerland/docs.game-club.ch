@@ -36,13 +36,6 @@ plugins:
   - search
   - tags
   - blog
-  - git-revision-date-localized:
-      enable_creation_date: false
-      type: datetime
-      format: "%d.%m.%Y"
-  - git-committers:
-      repository: Game-Club-Switzerland/docs.game-club.ch
-  - git-authors
 
 nav:
   - Willkommen:
