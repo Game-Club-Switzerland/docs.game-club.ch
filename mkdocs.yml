@@ -1,0 +1,74 @@
+
+# Project information
+site_name: Game Club.ch
+site_url: https://docs.game-cub.ch
+#repo_url: https://github.com/gameclub/docs.game-cub.ch
+#repo_name: elstein.ch
+edit_uri: edit/main/docs/
+theme:
+  name: material
+  logo: assets/logo.svg
+  favicon: assets/logo.png
+  language: de
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.tracking
+    - navigation.indexes
+    - content.tabs.link
+    - content.code.copy
+    - content.action.view
+    - content.action.edit
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+    - search.share
+  icon:
+    # https://squidfunk.github.io/mkdocs-material/setup/adding-a-git-repository/#code-actions
+    edit: material/pencil
+    view: material/eye
+  custom_dir: overrides    
+
+extra_css:
+  - stylesheets/gameclub.css
+
+plugins:
+  - search
+  - tags
+  - blog
+  - git-revision-date-localized:
+      enable_creation_date: false
+      type: datetime
+      format: "%d.%m.%Y"
+  - git-committers:
+      repository: gameclub/docs.game-cub.ch
+  - git-authors
+
+nav:
+  - Willkommen:
+    - index.md
+    - Club Treff: events/clubtreff.md
+    - Mitglied werden: club/mitglied-werden.md
+  - Verein:
+    - Der Verein: club.md
+    - Mitglieder: club/mitglieder.md
+    - Statuten: club/statuten.md
+    - Mitglied werden: club/mitglied-werden.md
+    - Club Treff: club/clubtreff.md
+  - Games: games.md
+  - Events: 
+    - events.md
+    - Club Treff: events/clubtreff.md
+  - Blog:
+    - blog/index.md
+
+markdown_extensions:
+  - attr_list
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
