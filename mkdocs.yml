@@ -4,7 +4,7 @@ site_name: Game Club.ch
 site_url: https://docs.game-cub.ch
 #repo_url: https://github.com/Game-Club-Switzerland/docs.game-club.ch
 #repo_name: elstein.ch
-edit_uri: edit/main/docs/
+#edit_uri: edit/main/docs/
 theme:
   name: material
   logo: assets/logo.svg
